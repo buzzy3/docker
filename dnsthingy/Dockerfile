@@ -15,7 +15,7 @@ RUN mkdir -p /opt/bin \
     && tar -xzf /opt/bin/dnsthingy.tar.gz -C /opt/bin \
     && rm /opt/bin/dnsthingy.tar.gz
 
-ADD images/dnsthingy/entry-point.sh /opt/bin/
+ADD dnsthingy/entry-point.sh /opt/bin/
 
 # DNS
 EXPOSE 53/udp
